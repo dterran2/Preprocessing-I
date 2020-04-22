@@ -47,8 +47,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+// ----------------------------------------------------------------Reset above -----------------------------------------------------
 /* Set every element's box-sizing to border-box */
+
+html{
+	font-size: 62.5%;
+}
+
+@theme-color: slateblue;
+
 * {
     box-sizing: border-box;
 }
@@ -57,3 +64,41 @@ html, body {
     height: 100%;
 }
 
+header{
+	height: 10%;
+	background-color: @theme-color;
+  
+	@media(max-width: 500px){
+			height:15%;
+			padding:1rem;
+			}
+
+	h1{
+	  font-size: 5rem;
+		  
+	 	@media(max-width: 500px){
+			text-align: center;
+			}
+
+	}
+	nav{
+		display: flex;
+		justify-content: center;
+		justify-content: space-evenly;
+
+			@media(max-width: 500px){
+
+			}
+	a{
+		font-size: 3rem;
+		color: black;
+ 	} //end of a tag
+	} //end of nav tag
+}  //end of header
+  .containerAbout{
+	  .myPic{
+		@media(max-width: 500px){
+			width: 20%;
+	  }
+	}
+  }
