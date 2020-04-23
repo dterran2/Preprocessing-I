@@ -130,6 +130,15 @@ table {
 html {
   font-size: 62.5%;
 }
+.theme {
+  background-color: slateblue;
+  font-size: 3rem;
+  text-align: center;
+}
+.display-block {
+  display: block;
+  width: 50%;
+}
 * {
   box-sizing: border-box;
 }
@@ -164,8 +173,112 @@ header nav a {
   font-size: 3rem;
   color: black;
 }
+.intro {
+  display: flex;
+  width: 100%;
+}
+.intro .myPic {
+  width: 50%;
+}
+.intro .container {
+  width: 50%;
+}
+.intro .container h2 {
+  font-size: 4rem;
+  padding: 2rem;
+}
 @media (max-width: 500px) {
-  .containerAbout .myPic {
-    width: 20%;
+  .intro .container h2 {
+    padding: 0;
+  }
+}
+.intro .container p {
+  font-size: 2rem;
+}
+.intro .container .Intro-Contact {
+  margin-top: 5rem;
+  border-top: 1rem dashed black;
+}
+@media (max-width: 500px) {
+  .intro .container .Intro-Contact {
+    display: none;
+  }
+}
+.intro .container .Intro-Contact-Nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 50%;
+}
+.intro .container .Intro-Contact-Nav a {
+  font-size: 2rem;
+  padding: 1rem;
+  width: 50%;
+}
+.Skills {
+  display: block;
+}
+.Skills h2 {
+  background-color: slateblue;
+  font-size: 3rem;
+  text-align: center;
+}
+.Skills .skills-container {
+  display: flex;
+}
+.Skills .skills-container p {
+  font-size: 2rem;
+}
+.Skills .skills-container .skills-paragraph {
+  display: block;
+  width: 50%;
+}
+.Skills .skills-container .Skills-Box {
+  display: block;
+  width: 50%;
+}
+.WorkHistory {
+  margin-top: 4rem;
+  display: block;
+}
+.WorkHistory h2 {
+  background-color: slateblue;
+  font-size: 3rem;
+  text-align: center;
+}
+.WorkHistory table {
+  text-align: center;
+  font-size: 3rem;
+}
+.WorkHistory table .even {
+  background-color: darkgray;
+}
+.WorkHistory table .odd {
+  background-color: lightgray;
+}
+@media (max-width: 500px) {
+  .WorkHistory table {
+    font-size: 1rem;
+  }
+}
+.Contact-Footer {
+  margin-top: 4rem;
+  display: block;
+}
+.Contact-Footer h2 {
+  background-color: slateblue;
+  font-size: 3rem;
+  text-align: center;
+}
+.footer-Contact-Nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Contact-Footer .footer-Contact-Nav a {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .Contact-Footer .footer-Contact-Nav a {
+    font-size: 2rem;
   }
 }

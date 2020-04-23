@@ -55,6 +55,15 @@ html{
 }
 
 @theme-color: slateblue;
+.theme{
+	background-color: @theme-color;
+	font-size: 3rem;
+	text-align: center;
+}
+.display-block{
+	display:block;
+	width:50%;
+}
 
 * {
     box-sizing: border-box;
@@ -95,10 +104,118 @@ header{
  	} //end of a tag
 	} //end of nav tag
 }  //end of header
-  .containerAbout{
-	  .myPic{
-		@media(max-width: 500px){
-			width: 20%;
-	  }
+
+.intro{
+	display: flex;
+	width: 100%;
+
+	.myPic{
+		width: 50%;
+		}
+	.container{	
+		width:50%;	
+		h2{
+			font-size: 4rem;
+			padding: 2rem;
+			@media(max-width: 500px){
+				padding:0;
+			}
+		}
+		p{
+			font-size: 2rem;
+		}
+		.Intro-Contact{
+			margin-top: 5rem;
+			border-top: 1rem dashed black;
+
+			@media(max-width: 500px){
+				display:none;
+			}
+		}
+		.Intro-Contact-Nav{
+			
+			display: flex;
+			flex-direction: column;
+			padding: 1rem;
+			width: 50%;
+			
+			
+			a{
+				font-size: 2rem;
+				padding: 1rem;
+				width: 50%;
+			}
+		}	
 	}
-  }
+
+}
+
+.Skills{
+	display: block;
+	h2{
+		.theme();
+		// font-size: 3rem;
+		// text-align: center;
+	}
+	.skills-container{
+		display:flex;
+		p{
+			font-size: 2rem;
+		}
+		.skills-paragraph{
+			.display-block();
+			// display:block;
+			// width:50%;
+		}
+
+		.Skills-Box{
+			.display-block();
+			// display:block;
+			// width:50%;
+		}
+	}
+}
+
+.WorkHistory{
+	margin-top: 4rem;
+	h2{
+		.theme();
+		// font-size: 3rem;
+		// text-align: center;
+	}
+	display:block;
+	table{
+		text-align: center;
+		font-size: 3rem;
+	.even{
+		background-color: darkgray;
+	}	
+	.odd{
+		background-color: lightgray;
+	}
+
+		@media(max-width: 500px){
+			font-size: 1rem;
+		}
+	}
+}
+
+.Contact-Footer{
+	margin-top: 4rem;
+	display:block;
+	h2{
+		.theme();
+			
+	}
+}
+.footer-Contact-Nav{
+	display:flex;
+	justify-content: space-evenly;
+}
+.Contact-Footer .footer-Contact-Nav a{
+	font-size: 3rem;
+	@media(max-width: 500px){
+		font-size: 2rem;
+	}
+	
+}
